@@ -3,6 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - flake8=3.8.4
+  - gfortran
+  - openblas
+  - pkg-config
+  - cmake
   - ipykernel=5.4.2
   - ipywidgets=7.6.2
   - nb_conda_kernels=2.3.1
@@ -14,17 +18,17 @@ dependencies:
   - plotly=4.14.1
   - plotnine=0.7.1
   - psycopg2=2.8.6
-  - py2neo=4.2.0
   - pytest=6.2.1
   - python=3.8.6
   - requests=2.25.1
   - scikit-learn=0.24.0
-  - scikit-misc=0.1.3
   - scipy=1.6.0
   - tqdm=4.55.1
-  - umap-learn=0.4.6
   - xarray=0.16.2
   - xlrd=1.2.0
   - pip:
     - git+https://github.com/hetio/hetnetpy@a4b11a055353fa54b1697a663701c53a61927da8
     - git+https://github.com/hetio/hetmatpy@bc36aa9859c43a1a5fb22808cd6eb952ef9d497c
+    - py2neo==2021.2.4
+    - scikit-misc==0.2.0
+    - umap-learn==0.4.6
